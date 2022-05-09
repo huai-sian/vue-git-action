@@ -22,6 +22,9 @@ jobs:
     steps:      
     - uses: actions/checkout@master
     
+    - name: Change directory
+      run: cd vue-git-action/vue-git-action
+    
     - name: Install
       run: npm install
     
