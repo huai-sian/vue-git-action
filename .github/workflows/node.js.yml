@@ -30,7 +30,7 @@ jobs:
         run: |
           cd ./hello-vue3
           npm install
-          cd ../hello-vue3/dist
+          cd ../dist
           npm run build 
           
       # Runs a single command using the runners shell
