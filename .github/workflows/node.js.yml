@@ -29,7 +29,7 @@ jobs:
       - name: Install & Build # 執行指令
         run: |
           cd ./hello-vue3
-          npm install
+          npm run ci
           npm run build 
           
       - name: Deploy to Server 1
