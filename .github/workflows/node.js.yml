@@ -24,22 +24,22 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      #- uses: actions/checkout@v2
       
-      - name: Install & Build # 執行指令
-        run: |
-          cd ./hello-vue3
-          npm install
-          npm run build 
+      #- name: Install & Build # 執行指令
+      #  run: |
+      #    cd ./hello-vue3
+      #    npm install
+      #    npm run build 
           
-      - name: Deploy to Server 1
-        uses: easingthemes/ssh-deploy@main
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.HOST_DNS }}
-          REMOTE_USER: ${{ secrets.USERNAME }}
-          TARGET: ${{ secrets.TARGET_DIR }}
-          SOURCE: "./hello-vue3/dist"        
+      #- name: Deploy to Server 1
+      #  uses: easingthemes/ssh-deploy@main
+      #  env:
+      #    SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
+      #    REMOTE_HOST: ${{ secrets.HOST_DNS }}
+      #    REMOTE_USER: ${{ secrets.USERNAME }}
+      #    TARGET: ${{ secrets.TARGET_DIR }}
+      #    SOURCE: "./hello-vue3/dist"        
           
       - name: Executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
