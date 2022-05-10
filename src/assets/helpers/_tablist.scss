@@ -1,0 +1,26 @@
+.tablist {
+  .nav-link {
+    border: none;
+    color: black;
+    &.active {
+      border-bottom: 2px solid #4154f1;
+      color: #4154f1;
+    }
+  }
+}
+
+.tab-content {
+  .card-title {
+    padding: 20px 0 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: $main;
+  }
+  .profile-overview .label,
+  .profile-edit .col-form-label,
+  .profile-change-password .col-form-label {
+    font-weight: 600;
+    color: rgba(1, 41, 112, 0.6);
+    text-align: left;
+  }
+}

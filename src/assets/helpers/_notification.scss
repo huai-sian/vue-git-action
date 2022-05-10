@@ -1,0 +1,23 @@
+.notification {
+  padding: 0 1.5rem;
+  &__box {
+    box-shadow: 0px 0px 1.5rem #00000019;
+    background-color: white;
+    text-align: left;
+    border-left: 2px solid $main;
+    cursor: pointer;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  &__filter {
+    width: 8rem;
+  }
+}
+
+.modal {
+  &-msg-title {
+    font-size: 1.25rem;
+  }
+}

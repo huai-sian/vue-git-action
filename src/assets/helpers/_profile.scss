@@ -1,0 +1,23 @@
+.profile {
+  &__name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c384e;
+  }
+  &__identity {
+    font-size: 18px;
+  }
+  .card {
+    border: none;
+  }
+  &__card {
+    box-shadow: 0px 0 30px rgba(1, 41, 112, .1);
+    border: none;
+  }
+  .social-links {
+    color: rgba(1, 41, 112, 0.5);
+    i {
+      color: rgba(1, 41, 112, 0.5);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.footer {
+  background-color: white;
+  &__title {
+    font-size: 1.5rem;
+    color: $main;
+  }
+  &__txt {
+    line-height: 1.3rem;
+    color: $greytxt;
+  }
+  &__list {
+    color: $greytxt;
+  }
+  .btn-subscibe {
+    background-color: $main;
+    color: white;
+  }
+  &__copyright {
+    font-size: .8rem;
+  }
+}
