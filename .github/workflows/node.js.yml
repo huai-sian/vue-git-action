@@ -30,6 +30,7 @@ jobs:
       
       - name: Install & Build # 執行指令
         run: |
+          node install -g node-gyp
           npm install
           npm run build 
           
