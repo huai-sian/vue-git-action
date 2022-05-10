@@ -30,7 +30,7 @@ jobs:
       
       - name: Install & Build # 執行指令
         run: |
-          npm ci
+          npm install
           npm run build 
           
       - name: Deploy to Server 1
