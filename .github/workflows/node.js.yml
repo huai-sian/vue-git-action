@@ -28,7 +28,6 @@ jobs:
       
       - name: Install & Build # 執行指令
         run: |
-          cd ./hello-vue3
           npm ci
           npm run build 
           
@@ -39,7 +38,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
-          SOURCE: "./hello-vue3/dist"        
+          SOURCE: "./dist"        
           
       - name: Executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
